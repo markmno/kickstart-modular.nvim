@@ -20,9 +20,13 @@ require('lazy').setup({
   -- Use `opts = {}` to force a plugin to be loaded.
   --
 
-
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
+  require 'kickstart/plugins/nui',
+
+  require 'kickstart/plugins/ranger',
+
+  require 'kickstart/plugins/remote',
 
   require 'kickstart/plugins/gitsigns',
 
@@ -36,7 +40,9 @@ require('lazy').setup({
 
   require 'kickstart/plugins/cmp',
 
-  require 'kickstart/plugins/tokyonight',
+  require 'kickstart/plugins/venv-selector',
+
+  require 'kickstart/plugins/molten',
 
   require 'kickstart/plugins/todo-comments',
 
@@ -44,6 +50,13 @@ require('lazy').setup({
 
   require 'kickstart/plugins/treesitter',
 
+  require 'kickstart/plugins/nord-nvim',
+
+  require 'kickstart/plugins/nvim-dap',
+
+  require 'kickstart/plugins/toggleterm',
+
+  require 'kickstart/plugins/distant',
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
