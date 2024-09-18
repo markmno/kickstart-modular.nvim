@@ -24,11 +24,11 @@ require('lazy').setup({
   -- include a plugin definition from file lua/path/name.lua
   require 'kickstart.plugins/rocks',
   -- require 'kickstart/plugins/nui',
-  require 'kickstart/plugins/gitsigns',
+  -- require 'kickstart/plugins/gitsigns',
   require 'kickstart/plugins/which-key',
   require 'kickstart/plugins/telescope',
   require 'kickstart/plugins/lspconfig',
-  -- require 'kickstart/plugins/conform',
+  require 'kickstart/plugins/conform',
   require 'kickstart/plugins/cmp',
   -- require 'kickstart/plugins/venv-selector',
   -- require 'kickstart/plugins/molten',
@@ -40,12 +40,12 @@ require('lazy').setup({
   -- require 'kickstart/plugins/toggleterm',
   require 'kickstart/plugins/lualine',
   -- require 'kickstart/plugins/edgy',
-  require 'kickstart/plugins/bufferline',
+  -- require 'kickstart/plugins/bufferline',
   -- require 'kickstart/plugins/noice',
   require 'kickstart/plugins/dressing',
   -- require 'kickstart.plugins.avante',
- -- require 'kickstart.plugins.image_preview',
   require 'kickstart/plugins/image_nvim',
+  require 'kickstart/plugins/comment',
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
@@ -57,7 +57,7 @@ require('lazy').setup({
   --
   -- require 'kickstart.plugins.debug',
   require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
+  require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
 

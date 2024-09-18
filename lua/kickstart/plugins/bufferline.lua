@@ -20,8 +20,8 @@ return {
       always_show_bufferline = true,
       offsets = {
         {
-          filetype = "neo-tree",
-          text = "Neo-tree",
+          filetype = "nvim-tree",
+          text = "Explorer",
           highlight = "Directory",
           text_align = "left",
         },
