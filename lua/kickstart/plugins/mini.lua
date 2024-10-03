@@ -12,21 +12,22 @@ return {
       --  - ci'  - [C]hange [I]nside [']quote
       require('mini.ai').setup { n_lines = 500 }
 
-      -- require('mini.tabline').setup({set_vim_settings=false})
-
+      require('mini.tabline').setup()
+      require('mini.git').setup()
+      require('mini.diff').setup()
       -- require('mini.files').setup()
       -- Add/delete/replace surroundings (brackets, quotes, etc.)
       --
       -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
       -- - sd'   - [S]urround [D]elete [']quotes
       -- - sr)'  - [S]urround [R]eplace [)] [']
-      require('mini.surround').setup({set_vim_settings=false})
+      require('mini.surround').setup({ set_vim_settings = false })
 
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
       --  and try some other statusline plugin
-      
-      -- require('mini.statusline').setup()
+
+      require('mini.statusline').setup()
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,

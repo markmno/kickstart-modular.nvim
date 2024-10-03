@@ -12,7 +12,11 @@ return {
       },
     },
   },
-  { 'Bilal2453/luvit-meta', lazy = true },
+  {
+    -- Luvit
+    'Bilal2453/luvit-meta',
+    lazy = true
+  },
   {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',

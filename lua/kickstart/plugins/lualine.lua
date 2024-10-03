@@ -25,19 +25,19 @@ return {
       sections = {
         lualine_a = { 'mode' },
         lualine_b = { 'branch', 'diff', 'diagnostics' },
-        lualine_c = { },
+        lualine_c = {},
         lualine_x = { 'encoding', 'fileformat', 'filetype' },
         lualine_y = { 'progress' },
         lualine_z = { 'location' },
       },
-      tabline = {
-        lualine_a = {},
-        lualine_b = { 'buffers' },
-        lualine_c = {},
-        lualine_x = {},
-        lualine_y = {},
-        lualine_z = {},
-      },
+      -- tabline = {
+      --   lualine_a = {},
+      --   lualine_b = { 'buffers' },
+      --   lualine_c = {},
+      --   lualine_x = {},
+      --   lualine_y = {},
+      --   lualine_z = {},
+      -- },
       inactive_sections = {
         lualine_a = {},
         lualine_b = {},
@@ -46,7 +46,7 @@ return {
         lualine_y = {},
         lualine_z = {},
       },
-      disabled_filetype = {'neo-tree'},
+      disabled_filetype = { 'neo-tree' },
     }
 
     -- do not add trouble symbols if aerial is enabled

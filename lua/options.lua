@@ -3,8 +3,8 @@
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 -- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 0
+vim.g.loaded_netrwPlugin = 0
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
@@ -43,7 +43,7 @@ vim.opt.smartcase = true
 vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
--- vim.opt.updatetime = 250
+vim.opt.updatetime = 250
 
 -- Decrease mapped sequence wait time
 -- Displays which-key popup sooner
@@ -69,5 +69,12 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 vim.opt.shiftwidth = 4
+
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.o.expandtab = true
+
+-- Swapfile
+vim.opt.swapfile = false
 
 -- vim: ts=2 sts=2 sw=2 et
